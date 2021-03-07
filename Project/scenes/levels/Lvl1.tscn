@@ -5,6 +5,7 @@
 [ext_resource path="res://scenes/assets/Teleporter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://textures/tilesets/tileset2fixed.png" type="Texture" id=4]
 [ext_resource path="res://scripts/teleporters/tele1.gd" type="Script" id=5]
+[ext_resource path="res://scenes/assets/Walls.tscn" type="PackedScene" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tileset1.png 0"
@@ -232,9 +233,6 @@
 15/shapes = [  ]
 15/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 3620.61, 24.9678 )
-
 [node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -247,37 +245,11 @@ tile_data = PoolIntArray( -524300, 2, 0, -524299, 2, 0, -524298, 2, 0, -524297, 
 
 [node name="Welcome" type="Node2D" parent="YSort"]
 
-[node name="Character" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 476.673, 337.888 )
+[node name="Walls" parent="YSort" instance=ExtResource( 6 )]
 
-[node name="Walls" type="Node2D" parent="YSort"]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="YSort/Walls"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Walls/StaticBody2D"]
-position = Vector2( 0, -2064.11 )
-shape = SubResource( 2 )
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="YSort/Walls"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Walls/StaticBody2D2"]
-position = Vector2( 0, 2442.31 )
-shape = SubResource( 2 )
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="YSort/Walls"]
-rotation = -1.57079
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Walls/StaticBody2D3"]
-position = Vector2( -0.00610352, -2715.51 )
-shape = SubResource( 2 )
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="YSort/Walls"]
-rotation = -1.57079
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Walls/StaticBody2D4"]
-position = Vector2( 0.00610352, 2730.64 )
-shape = SubResource( 2 )
-
-[node name="Teleporter" parent="YSort" instance=ExtResource( 3 )]
+[node name="Teleporter" parent="." instance=ExtResource( 3 )]
 position = Vector2( -1535.67, 1163.54 )
 script = ExtResource( 5 )
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+position = Vector2( 476.673, 337.888 )
