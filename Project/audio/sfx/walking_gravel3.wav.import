@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/walking_gravel3.wav-4a21b2e6c1c7f7fc62c06e3a312b225e.sample"
+
+[deps]
+
+source_file="res://audio/sfx/walking_gravel3.wav"
+dest_files=[ "res://.import/walking_gravel3.wav-4a21b2e6c1c7f7fc62c06e3a312b225e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
