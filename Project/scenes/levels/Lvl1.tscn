@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/assets/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://textures/tilesets/tileset1.png" type="Texture" id=2]
 [ext_resource path="res://scenes/assets/Teleporter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://textures/tilesets/tileset2fixed.png" type="Texture" id=4]
-[ext_resource path="res://scripts/teleporters/tele1.gd" type="Script" id=5]
 [ext_resource path="res://scenes/assets/Walls.tscn" type="PackedScene" id=6]
 
 [sub_resource type="TileSet" id=1]
@@ -233,7 +232,7 @@
 15/shapes = [  ]
 15/z_index = 0
 
-[node name="Game" type="Node2D"]
+[node name="Level" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -249,7 +248,11 @@ tile_data = PoolIntArray( -524300, 2, 0, -524299, 2, 0, -524298, 2, 0, -524297, 
 
 [node name="Teleporter" parent="." instance=ExtResource( 3 )]
 position = Vector2( -1535.67, 1163.54 )
-script = ExtResource( 5 )
 
 [node name="Character" parent="." instance=ExtResource( 1 )]
 position = Vector2( 476.673, 337.888 )
+
+[node name="Inf" type="Node" parent="."]
+__meta__ = {
+"_editor_description_": "Lvl2"
+}

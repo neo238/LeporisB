@@ -7,7 +7,7 @@ radius = 100.31
 height = 0.0
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 67.5516, 88.097 )
+extents = Vector2( 77.9504, 108.863 )
 
 [node name="DeadBush" type="Node2D"]
 position = Vector2( 427.164, -222.655 )
