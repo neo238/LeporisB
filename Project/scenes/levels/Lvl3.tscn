@@ -1,7 +1,72 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/assets/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://textures/tilesets/PT2.png" type="Texture" id=2]
+
+[sub_resource type="TileSet" id=1]
+0/name = "PT2.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 304, 304 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "PT2.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 304, 0, 304, 304 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "PT2.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 304, 304, 304 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "PT2.png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 304, 304, 304, 304 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
 
 [node name="Level" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 304, 304 )
+format = 1
+tile_data = PoolIntArray( -327686, 2, 0, -327685, 2, 0, -327684, 2, 0, -327683, 2, 0, -327682, 0, 0, -327681, 0, 0, -393216, 0, 0, -393215, 2, 0, -393214, 2, 0, -393213, 2, 0, -393212, 2, 0, -393211, 2, 0, -262150, 0, 0, -262149, 0, 0, -262148, 0, 0, -262147, 0, 0, -262146, 2, 0, -262145, 2, 0, -327680, 0, 0, -327679, 0, 0, -327678, 0, 0, -327677, 0, 0, -327676, 0, 0, -327675, 0, 0, -196614, 2, 0, -196613, 2, 0, -196612, 2, 0, -196611, 2, 0, -196610, 2, 0, -196609, 2, 0, -262144, 2, 0, -262143, 2, 0, -262142, 2, 0, -262141, 2, 0, -262140, 2, 0, -262139, 2, 0, -131078, 1, 0, -131077, 1, 0, -131076, 2, 0, -131075, 2, 0, -131074, 2, 0, -131073, 2, 0, -196608, 0, 0, -196607, 2, 0, -196606, 1, 0, -196605, 2, 0, -196604, 1, 0, -196603, 2, 0, -65542, 1, 0, -65541, 1, 0, -65540, 2, 0, -65539, 3, 0, -65538, 3, 0, -65537, 2, 0, -131072, 3, 0, -131071, 3, 0, -131070, 3, 0, -131069, 3, 0, -131068, 2, 0, -131067, 2, 0, -6, 1, 0, -5, 1, 0, -4, 2, 0, -3, 2, 0, -2, 3, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 2, 0, -65533, 1, 0, -65532, 1, 0, -65531, 2, 0, 65530, 1, 0, 65531, 1, 0, 65532, 2, 0, 65533, 2, 0, 65534, 1, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 2, 0, 3, 0, 0, 4, 2, 0, 5, 2, 0, 131066, 1, 0, 131067, 1, 0, 131068, 2, 0, 131069, 2, 0, 131070, 0, 0, 131071, 0, 0, 65536, 2, 0, 65537, 2, 0, 65538, 0, 0, 65539, 0, 0, 65540, 1, 0, 65541, 2, 0, 196602, 1, 0, 196603, 1, 0, 196604, 2, 0, 196605, 2, 0, 196606, 0, 0, 196607, 0, 0, 131072, 2, 0, 131073, 2, 0, 131074, 0, 0, 131075, 0, 0, 131076, 2, 0, 131077, 2, 0, 262138, 1, 0, 262139, 1, 0, 262140, 2, 0, 262141, 3, 0, 262142, 3, 0, 262143, 3, 0, 196608, 3, 0, 196609, 2, 0, 196610, 2, 0, 196611, 2, 0, 196612, 1, 0, 196613, 2, 0, 327674, 1, 0, 327675, 1, 0, 327676, 2, 0, 327677, 2, 0, 327678, 3, 0, 327679, 3, 0, 262144, 3, 0, 262145, 2, 0, 262146, 0, 0, 262147, 2, 0, 262148, 3, 0, 262149, 2, 0, 393210, 1, 0, 393211, 1, 0, 393212, 2, 0, 393213, 3, 0, 393214, 2, 0, 393215, 3, 0, 327680, 2, 0, 327681, 0, 0, 327682, 2, 0, 327683, 0, 0, 327684, 2, 0, 327685, 2, 0 )
 
 [node name="Character" parent="." instance=ExtResource( 1 )]
